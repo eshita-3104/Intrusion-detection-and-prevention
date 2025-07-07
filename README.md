@@ -106,3 +106,4 @@ The web dashboard provides a user-friendly interface for monitoring the IoT netw
 * A **blocked traffic history table** that logs all prevention actions.
 
 The dashboard refreshes automatically, offering a live look into the security of your IoT network.
+
