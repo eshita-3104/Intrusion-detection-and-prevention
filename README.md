@@ -12,7 +12,7 @@ Edge-Sentry is a proof-of-concept project that demonstrates an internet-free ano
 
 ## Project Overview
 
-The core of this project is to address the security vulnerabilities inherent in the lightweight MQTT protocol, which is commonly used in IoT applications. : 6, 9] IoT devices are often resource-constrained and lack robust security, making them targets for cyber-attacks. : 10] Edge-Sentry provides a localized, internet-free solution where an ESP32 publisher sends sensor data to another ESP32 acting as an Access Point and MQTT broker. : 14, 15, 16] A Raspberry Pi, connected to this network, hosts the anomaly detection model, sniffing MQTT traffic, and a Flask web dashboard for real-time monitoring and visualization. : 17, 24]
+The core of this project is to address the security vulnerabilities inherent in the lightweight MQTT protocol, which is commonly used in IoT applications. IoT devices are often resource-constrained and lack robust security, making them targets for cyber-attacks. Edge-Sentry provides a localized, internet-free solution where an ESP32 publisher sends sensor data to another ESP32 acting as an Access Point and MQTT broker. A Raspberry Pi, connected to this network, hosts the anomaly detection model, sniffing MQTT traffic, and a Flask web dashboard for real-time monitoring and visualization. 
 
 ## Features
 
