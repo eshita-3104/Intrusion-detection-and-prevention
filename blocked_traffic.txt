@@ -1,0 +1,30 @@
+[2025-06-09 13:30:58] --- NIDS Prevention System Started ---
+[2025-06-09 13:31:00] BLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Invalid Payload Structure/Value | DURATION: 300 seconds.
+  Packets from this IP to this port will now be dropped by the firewall.
+[2025-06-09 13:31:03] UNBLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Script shutdown/cleanup.
+[2025-06-09 13:31:08] --- NIDS Prevention System Started ---
+[2025-06-09 13:31:18] BLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Invalid Payload Structure/Value | DURATION: 300 seconds.
+  Packets from this IP to this port will now be dropped by the firewall.
+[2025-06-09 13:31:30] UNBLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Script shutdown/cleanup.
+[2025-06-09 14:14:21] --- NIDS Prevention System Started ---
+[2025-06-09 14:14:49] BLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Invalid Payload Structure/Value | DURATION: 300 seconds.
+  Packets from this IP to this port will now be dropped by the firewall.
+[2025-06-09 14:15:13] UNBLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Script shutdown/cleanup.
+[2025-06-09 14:27:55] --- NIDS Prevention System Started ---
+[2025-06-09 14:37:23] --- NIDS Prevention System Started ---
+[2025-06-09 14:39:30] BLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: High Packet Rate (5.0 pkt/s) detected, potential flood attack. | DURATION: 300 seconds.
+  Packets from this IP to this port will now be dropped by the firewall.
+[2025-06-09 14:44:31] UNBLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Duration expired.
+[2025-06-09 14:54:46] --- NIDS Prevention System Started ---
+[2025-06-09 14:57:07] BLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: High Packet Rate (5.0 pkt/s) detected, potential flood attack. | DURATION: 300 seconds.
+  Packets from this IP to this port will now be dropped by the firewall.
+[2025-06-09 14:58:20] UNBLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Script shutdown/cleanup.
+[2025-06-09 15:02:36] --- NIDS Prevention System Started ---
+[2025-06-09 15:07:25] --- NIDS Prevention System Started ---
+[2025-06-09 15:09:25] BLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: High Packet Rate (5.0 pkt/s) detected, potential flood attack. | DURATION: 300 seconds.
+  Packets from this IP to this port will now be dropped by the firewall.
+[2025-06-09 15:09:42] UNBLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Script shutdown/cleanup.
+[2025-06-09 15:28:44] --- NIDS Prevention System Started ---
+[2025-06-09 15:33:27] BLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: High Packet Rate (5.0 pkt/s) detected, potential flood attack. | DURATION: 300 seconds.
+  Packets from this IP to this port will now be dropped by the firewall.
+[2025-06-09 15:34:04] UNBLOCKED IP: 192.168.4.2 | PORT: 1883 | REASON: Script shutdown/cleanup.

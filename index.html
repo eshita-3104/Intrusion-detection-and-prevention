@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Anomaly Detection Dashboard</title>
+    <script src="/static/tailwind.min.js"></script>
+    <script src="/static/chart.js"></script>
+    <script src="/static/charts.js?v=1" defer></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+    <header class="bg-gray-800 p-6 shadow-lg">
+        <h1 class="text-3xl font-bold text-center text-teal-400">📊 IoT Anomaly Detection Dashboard</h1>
+        <p class="text-center text-gray-400 mt-2">Real-time monitoring of MQTT packets</p>
+    </header>
+    <main class="container mx-auto p-6">
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-teal-300">📈 Anomaly Score Over Time</h2>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <canvas id="anomalyChart"></canvas>
+            </div>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-teal-300">🥧 Anomaly Distribution</h2>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md flex justify-center">
+                <canvas id="anomalyPieChart" style="max-width: 300px; max-height: 300px;"></canvas>
+            </div>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-teal-300">⚠️ False Positives</h2>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                <p id="falsePositiveCounter" class="text-center text-gray-200">False Positives: 0</p>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-xl font-semibold mb-4 text-teal-300">📦 Packet Logs</h2>
+            <div class="bg-gray-700 p-4 rounded-lg shadow-md overflow-x-auto">
+                <table class="w-full text-sm text-left text-gray-200">
+                    <thead class="text-xs uppercase bg-gray-600 text-gray-300">
+                        <tr>
+                            <th class="px-4 py-2">Timestamp</th>
+                            <th class="px-4 py-2">Source</th>
+                            <th class="px-4 py-2">Destination</th>
+                            <th class="px-4 py-2">Topic</th>
+                            <th class="px-4 py-2">Payload</th>
+                            <th class="px-4 py-2">Score</th>
+                            <th class="px-4 py-2">Payload Length</th>
+                            <th class="px-4 py-2">Inter-Arrival (s)</th>
+                            <th class="px-4 py-2">Packet Rate</th>
+                            <th class="px-4 py-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="packetTableBody">
+                        <!-- Rows will be populated by charts.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <p class="text-center text-gray-400 mt-4">🔄 Data refreshes every 1 second</p>
+    </main>
+</body>
+</html>
